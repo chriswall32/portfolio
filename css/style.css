@@ -1,11 +1,84 @@
-/*========Universals=======*/
-
-
 /*=========Fonts==========*/
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Play:400,700');
+
+/*========Universals=======*/
+.inconsolata {
+  color: #fff;
+  font-family: 'Inconsolata', monospace;
+  text-transform: uppercase;
+}
 
 
 /*=========Navbar=========*/
+
 .nav-style {
-  background-color: #595556;
-  color: #fff;
+    background-color: #595556;
+    color: #fff;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.nav-style .pull-right a {
+    text-decoration: none;
+    color: #fff;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.nav-style .pull-right a:hover {
+    color: #595556;
+}
+
+.nav-pills>li>a:hover i {
+    color: #595556;
+}
+
+.nav-style i {
+    color: #fff;
+    min-height: 10px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus {
+    background-color: #595556;
+}
+
+.nav-pills>li.active>a:hover {
+    background-color: #fff;
+    color: #595556;
+}
+
+
+/*========Main Section========*/
+
+.page-background {
+    background-color: #7EA5A2;
+    height: 600px;
+}
+
+.construct {
+    margin-top: 80px;
+    font-size: 72px;
+}
+
+.user-text {
+  font-size: 56px;
+}
+
+.wallet-text {
+  font-size: 42px;
+}
+
+
+
+/*======Media Queries========*/
+/*Phone Screen*/
+@media only screen and (width: 300px) {
+
+}
+
+/*Tablet Screen*/
+@media only screen and (min-width: 600px) {
+
 }
