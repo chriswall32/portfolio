@@ -10,6 +10,7 @@
 }
 
 
+
 /*=========Navbar=========*/
 
 .nav-style {
@@ -53,12 +54,14 @@
 /*========Main Section========*/
 
 .page-background {
-    background-color: #7EA5A2;
-    height: 600px;
+    background-image: url('../img/background-img-pixel.png');
+    /*height: 800px;*/
+    background-size: cover;
+    background-position: center;
 }
 
 .construct {
-    margin-top: 80px;
+    margin-top: 5%;
     font-size: 72px;
 }
 
@@ -67,18 +70,60 @@
 }
 
 .wallet-text {
-  font-size: 42px;
+  font-size: 45px;
 }
 
+.shape-left {
+  width: 100%;
+}
 
+.shape-right {
+  width: 60%;
+  margin-right: -150px;
+}
+
+/*========Play Button=======*/
+.play-text {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+}
+
+.play-button .btn-default {
+  background-color: #B8F1ED;
+  color: #fff;
+  border-color: #595556;
+  margin-bottom: 30px;
+}
+
+.play-button .btn-default:hover {
+  background-color: #595556;
+  color: #B8F1ED;
+  border-color: #B8F1ED;
+}
 
 /*======Media Queries========*/
 /*Phone Screen*/
-@media only screen and (width: 300px) {
+@media screen and (width: 300px) {
 
 }
 
 /*Tablet Screen*/
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
 
+}
+
+@media screen and (max-width: 1400px) {
+  /*Resize body text*/
+  .construct {
+    font-size: 63px;
+  }
+  .user-text {
+    font-size: 45px;
+  }
+  .wallet-text {
+    font-size: 36px;
+  }
 }
