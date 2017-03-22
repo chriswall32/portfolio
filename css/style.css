@@ -58,6 +58,8 @@
     /*height: 800px;*/
     background-size: cover;
     background-position: center;
+    /*position: absolute;*/
+    z-index: -1;
 }
 
 .construct {
@@ -80,6 +82,7 @@
 .shape-right {
   width: 60%;
   margin-right: -150px;
+  overflow: hidden;
 }
 
 /*========Play Button=======*/
@@ -102,6 +105,10 @@
   background-color: #595556;
   color: #B8F1ED;
   border-color: #B8F1ED;
+}
+
+.page-background::after {
+  content: '';
 }
 
 /*======Media Queries========*/
