@@ -3,17 +3,22 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Play:400,700');
 
 /*========Universals=======*/
-.inconsolata {
-  color: #fff;
-  font-family: 'Inconsolata', monospace;
-  text-transform: uppercase;
-}
 
+.inconsolata {
+    color: #fff;
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    z-index: 1;
+}
 
 
 /*=========Navbar=========*/
 
 .nav-style {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
     background-color: #595556;
     color: #fff;
     font-family: 'Play', sans-serif;
@@ -26,6 +31,19 @@
     color: #fff;
     unicode-bidi: bidi-override;
     direction: rtl;
+}
+
+.navbar-toggle {
+  border: 2px #fff;
+  background-color: #595556;
+}
+
+.navbar-toggle:hover {
+  border: 1px solid #fff;
+}
+
+.navbar-toggle span {
+  background-color: #fff;
 }
 
 .nav-style .pull-right a:hover {
@@ -54,12 +72,13 @@
 /*========Main Section========*/
 
 .page-background {
-    background-image: url('../img/background-img-pixel.png');
-    /*height: 800px;*/
+    padding-top: 40px;
+    /*background-image: url('../img/background-img-pixel.png');*/
+    background-color: #2980b9;
+    height: 800px;
     background-size: cover;
     background-position: center;
-    /*position: absolute;*/
-    z-index: -1;
+    width: 100%;
 }
 
 .construct {
@@ -68,69 +87,112 @@
 }
 
 .user-text {
-  font-size: 56px;
+    font-size: 56px;
 }
 
+.page-background img {
+  z-index: 0;
+}
 .wallet-text {
-  font-size: 45px;
+    font-size: 45px;
 }
 
 .shape-left {
-  width: 100%;
+    width: 100%;
 }
 
-.shape-right {
-  width: 60%;
-  margin-right: -150px;
+.right-content {
   overflow: hidden;
 }
+.shape-right {
+    width: 60%;
+    transform: translate(100px, 0px);
+}
+
 
 /*========Play Button=======*/
+
 .play-text {
-  font-family: 'Play', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 16px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
 }
 
 .play-button .btn-default {
-  background-color: #B8F1ED;
-  color: #fff;
-  border-color: #595556;
-  margin-bottom: 30px;
+    background-color: #3498db;
+    color: #fff;
+    border-color: #595556;
+    margin-bottom: 30px;
 }
 
 .play-button .btn-default:hover {
-  background-color: #595556;
-  color: #B8F1ED;
-  border-color: #B8F1ED;
+    background-color: #595556;
+    color: #B8F1ED;
+    border-color: #B8F1ED;
 }
 
-.page-background::after {
-  content: '';
+/*.page-background::after {
+    content: '';
+}*/
+/*=======Carousel=========*/
+
+.carousel-container {
+  background-color: #27ae60;
+  padding: 15px 0 15px 0;
 }
 
 /*======Media Queries========*/
-/*Phone Screen*/
-@media screen and (width: 300px) {
 
+@media screen and (max-width: 1400px) {
+    /*Resize body text*/
+    .construct {
+        font-size: 63px;
+    }
+    .user-text {
+        font-size: 45px;
+    }
+    .wallet-text {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1250px){
+  /*Resize body text*/
+  .construct {
+      font-size: 59px;
+  }
+  .user-text {
+      font-size: 41px;
+  }
+  .wallet-text {
+      font-size: 32px;
+  }
+}
+
+/*Mid-sized screen*/
+@media screen and (max-width: 900px) {
+  /*Resize body text*/
+  .construct {
+      font-size: 50px;
+  }
+  .user-text {
+      font-size: 34px;
+  }
+  .wallet-text {
+      font-size: 28px;
+  }
 }
 
 /*Tablet Screen*/
+
 @media screen and (min-width: 600px) {
 
 }
 
-@media screen and (max-width: 1400px) {
-  /*Resize body text*/
-  .construct {
-    font-size: 63px;
-  }
-  .user-text {
-    font-size: 45px;
-  }
-  .wallet-text {
-    font-size: 36px;
-  }
+/*Phone Screen*/
+
+@media screen and (width: 300px) {
+
 }
