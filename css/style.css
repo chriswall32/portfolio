@@ -75,7 +75,7 @@
     padding-top: 40px;
     /*background-image: url('../img/background-img-pixel.png');*/
     background-color: #2980b9;
-    height: 800px;
+    min-height: 400px;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -106,7 +106,7 @@
 }
 .shape-right {
     width: 60%;
-    transform: translate(100px, 0px);
+    transform: translate(35%, 0px);
 }
 
 
@@ -141,6 +141,10 @@
 .carousel-container {
   background-color: #27ae60;
   padding: 15px 0 15px 0;
+}
+
+.carousel-caption {
+  color: #95a5a6;
 }
 
 /*======Media Queries========*/
@@ -185,14 +189,41 @@
   }
 }
 
-/*Tablet Screen*/
-
-@media screen and (min-width: 600px) {
-
+@media screen and (max-width: 770px) {
+  .construct {
+      font-size: 44px;
+  }
+  .user-text {
+      font-size: 30px;
+  }
+  .wallet-text {
+      font-size: 24px;
+  }
+  .shape-right {
+    width: 80%;
+  }
 }
 
-/*Phone Screen*/
+@media screen and (max-width: 680px) {
+  .construct {
+      font-size: 38px;
+  }
+  .user-text {
+      font-size: 24px;
+  }
+  .wallet-text {
+      font-size: 18px;
+  }
+}
 
-@media screen and (width: 300px) {
-
+@media screen and (max-width: 580px) {
+  .construct {
+      font-size: 28px;
+  }
+  .user-text {
+      font-size: 18px;
+  }
+  .wallet-text {
+      font-size: 12px;
+  }
 }
