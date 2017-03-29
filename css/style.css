@@ -30,13 +30,6 @@
     font-size: 22px;
 }
 
-.nav-style .pull-right a {
-    text-decoration: none;
-    color: #fff;
-    unicode-bidi: bidi-override;
-    direction: rtl;
-}
-
 .navbar-toggle {
     border: 2px #fff;
     background-color: #595556;
@@ -50,16 +43,12 @@
     background-color: #fff;
 }
 
-.nav-style .pull-right a:hover {
-    color: #595556;
-}
-
 .nav-pills>li>a:hover i {
     color: #595556;
 }
 
 .nav-style a {
-  color: #fff;
+    color: #fff;
 }
 
 .nav-style i {
@@ -180,6 +169,7 @@
     border-color: #B8F1ED;
 }
 
+
 /*=======Carousel=========*/
 
 .carousel-container {
@@ -191,18 +181,53 @@
     color: #95a5a6;
 }
 
-/*===========Work Tiles========*/
-.work-tiles
 
+/*===========Work Tiles========*/
+
+.work-background {
+  background-color: rgba(46, 204, 113, 1.0);
+}
+
+.work-tiles {
+  min-height: 500px;
+  list-style-type: none;
+}
+
+.work-tiles li:nth-child(1) {
+  width: 50%;
+  height: 100%;
+  background-image: url('../img/restaurante-food.png');
+}
+
+.work-tiles li:nth-child(1):hover {
+  transform: scale(.98);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/restaurante-food.png');
+  z-index: 2;
+  content: 'Mobile First';
+  color: #fff;
+}
+
+.work-tiles li:nth-child(2) {
+
+}
+
+.work-tiles li:nth-child(3) {
+
+}
+
+.work-tiles li:nth-child(4) {
+
+}
 /*=========Footer=========*/
 
-footer {
+footer.container-fluid {
     background-color: #595556;
     padding-top: 25px;
 }
 
 
 /*========Form===========*/
+
 form {
     background-color: rgba(46, 204, 113, 1.0);
 }
