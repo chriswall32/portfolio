@@ -264,6 +264,11 @@ footer a {
   color: #76F1E7;
 }
 
+footer a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
 footer .fa {
   font-size: 35px;
 }
