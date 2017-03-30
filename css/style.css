@@ -77,10 +77,13 @@
 .construct {
     margin-top: 5%;
     font-size: 72px;
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 2;
 }
 
 .user-text {
     font-size: 56px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .page-background img {
@@ -89,6 +92,7 @@
 
 .wallet-text {
     font-size: 45px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .shape-left {
@@ -96,14 +100,17 @@
     transform: translate(-2%, -30%);
 }
 
-.right-content {
-    overflow: hidden;
-}
-
 /*===========Work Tiles========*/
 
 .work-background {
   background-color: #76F1E7;
+  padding-bottom: 50px
+}
+
+.work-background h1 {
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .work-tiles {
@@ -116,70 +123,82 @@
 }
 
 .work-tiles div:nth-child(1) {
-  width: 50%;
-  height: 100%;
-  background-color: #2c3e50;
+  background-image: url('../img/wood-2.jpg');
+
+}
+
+work-tiles div:nth-child(1):hover {
+
+  z-index: 2;
 }
 
 .work-tiles div:nth-child(1) img {
-  width: 100%;
+  width: 90%;
+  height: 100%;
 }
 
 .work-tiles div:nth-child(1):hover img {
-  transform: scale(.95);
-  /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/restaurante-food.png');*/
+  /*transform: scale(.95);*/
   color: #fff;
-  animation: spin 2s infinite;
+  animation: rotate-full 2s infinite;
 }
 
+
 .work-tiles div:nth-child(2) {
-  width: 50%;
-  height: 100%;
-  background-color: #85919C;
+  /*max-width: 100%;
+  max-height: 100%;*/
+  background-image: url('../img/hero.jpg');
 }
 
 .work-tiles div:nth-child(2) img {
   width: 100%;
+  height: 100%;
 }
 
 .work-tiles div:nth-child(2):hover img {
-  transform: scale(.95);
-  /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/restaurante-food.png');*/
+  /*transform: scale(.95);*/
+  animation: rotate-half 2s infinite;
   color: #fff;
-  animation: spin 2s infinite;
+  /*animation: spin 2s infinite;*/
 }
 
 .work-tiles div:nth-child(3) {
   background-image: url('../img/Road-Sign.png');
-  width: 50%;
-  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .work-tiles div:nth-child(3) img {
   width: 100%;
+  margin-top: 15%;
 }
 
 .work-tiles div:nth-child(3):hover img {
-  transform: scale(.95);
-  animation: spin 2s infinite;
+  /*transform: scale(.95);*/
+  animation: spin-around 2s infinite;
 }
 
 .work-tiles div:nth-child(4) {
   background-image: url('../img/codepen-quote.png');
+  background-size: cover;
+  background-position: center;
 }
 
-.work-tiles div:nth-child(4) {
-  /*animation: spin 2s infinite;*/
+.work-tiles div:nth-child(4) img {
+  width: 60%;
+  margin-top: 15%;
 }
 
-/*.work-tiles div img {
-  max-width: 200px;
-  width: 100%;
-  height: 200px;
-}*/
+.work-tiles div:nth-child(4):hover img {
+  animation: spin 2s infinite;
+}
+
+.work-tiles div img {
+  width: 60%;
+  /*height: 100%;*/
+}
 
 /*========Spin Animations=========*/
-
 
 @keyframes spin {
     100% {
@@ -187,7 +206,47 @@
     }
 }
 
+@keyframes rotate-half {
+  0, 100% {
+    transform: rotateY(0deg);
+  }
 
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes rotate-full {
+  0 {
+    transform: rotateY(0deg);
+  }
+
+  25% {
+    transform: rotateY(90deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  75% {
+    transform: rotateY(270deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin-around {
+  0 {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
 
 /*=========Footer=========*/
 
@@ -208,20 +267,6 @@ footer a {
 footer .fa {
   font-size: 35px;
 }
-/*========Form===========*/
-
-form {
-    background-color: rgba(46, 204, 113, 1.0);
-}
-
-form.play-font {
-    font-weight: 700;
-}
-
-form label span {
-    color: red;
-}
-
 
 /*=======Footer Contact==========*/
 
@@ -254,31 +299,59 @@ form label span {
     }
 }
 
-
-/*Mid-sized screen*/
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1145px) {
     /*Resize body text*/
     .construct {
-        font-size: 50px;
+        font-size: 51px;
     }
     .user-text {
-        font-size: 34px;
+        font-size: 32px;
     }
     .wallet-text {
-        font-size: 28px;
+        font-size: 27px;
     }
 }
 
-@media screen and (max-width: 770px) {
+
+/*Mid-sized screen*/
+
+@media screen and (max-width: 995px) {
+    /*Resize body text*/
     .construct {
         font-size: 44px;
     }
     .user-text {
-        font-size: 30px;
+        font-size: 28px;
     }
     .wallet-text {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .construct {
+        font-size: 40px;
+    }
+    .user-text {
+        font-size: 26px;
+    }
+    .wallet-text {
+        font-size: 20px;
+    }
+    .shape-right {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .construct {
+        font-size: 34px;
+    }
+    .user-text {
         font-size: 24px;
+    }
+    .wallet-text {
+        font-size: 18px;
     }
     .shape-right {
         width: 80%;
@@ -287,24 +360,16 @@ form label span {
 
 @media screen and (max-width: 680px) {
     .construct {
-        font-size: 38px;
-    }
-    .user-text {
-        font-size: 24px;
-    }
-    .wallet-text {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .construct {
         font-size: 28px;
     }
     .user-text {
         font-size: 18px;
     }
     .wallet-text {
-        font-size: 12px;
+        font-size: 15px;
+    }
+    .shape-right {
+        width: 80%;
+        transform: translate(0, 0);
     }
 }

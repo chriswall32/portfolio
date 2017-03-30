@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chris Wall</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -26,7 +27,7 @@
             <div class="row">
                 <ul class="nav nav-pills">
                     <li role="presentation" class="active"><a href="#top">Chris Wall</a></li>
-                    <li role="presentation"><a href="#carousel">My Work</a></li>
+                    <li role="presentation"><a href="#work">My Work</a></li>
                     <li role="presentation"><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
@@ -36,15 +37,13 @@
     <!-- Body Text Starts Here -->
     <div class="container-fluid page-background" id="top">
         <div class="row">
-            <div class="col-lg-9 col-lg-offset-3">
+            <div class="col-xs-9 col-xs-offset-3">
                 <div class="construct inconsolata pull-right">constructing functional apps</div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-sm-4 col-xs-6">
                 <img src="img/geo-design.png" alt="geometric shapes left" class="img-responsive shape-left">
             </div>
-            <div class="col-sm-offset-1 col-sm-7 right-content">
+            <div class="col-sm-offset-1 col-sm-7 col-xs-6 right-content">
                 <div class="user-text pull-right inconsolata">your users will love</div><br>
                 <div class="wallet-text pull-right inconsolata">and so will your wallet</div><br>
             </div>
@@ -52,46 +51,45 @@
     </div>
     <!-- Body Text Ends Here -->
     <!-- Displayed Work Starts -->
-    <div class="container-fluid work-background">
-        <div class="row work-tiles">
-            <div class="col-md-4 col-md-offset-1 col-xs-6">
-                <a href="">
-                    <img src="img/rest-logo-01.png" alt="Restaurant Site" class="img-responsive">
-                    <span>Restaurante</span>
-                </a>
-            </div>
-            <div class="col-md-4 col-xs-6">
-                <a href="">
-                    <img src="img/petstore_logo.png" alt="Restaurant Site" class="img-responsive">
-                    <span>The Pet Store</span>
-                </a>
-            </div>
-            <div class="col-md-4 col-md-offset-1 col-xs-6">
-                <a href="http://www.petersfarms.com">
-                    <img src="img/Peters-Fruit-Logo.png" alt="Peters Fruit Logo" class="img-responsive">
-                    <span>Peters Fruit Farms</span>
-                </a>
-            </div>
-            <div class="col-md-4 col-xs-6">
-                <a href="http://codepen.io/chriswall32/pen/BpJXWK">
-                    <img src="img/Button-White-Small.png" alt="CodePen Quote Machine" class="img-responsive">
-                    <span>CodePen</span>
-                </a>
+    <div class="container-fluid work-background" id="work">
+        <div class="container">
+            <h1 class="text-center play-font">MY WORK</h1>
+            <div class="row work-tiles">
+                <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+                    <a href="">
+                        <img src="img/rest-logo-01.png" alt="Restaurant Site" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    <a href="">
+                        <img src="img/petstore_logo.png" alt="Restaurant Site" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+                    <a href="http://www.petersfarms.com/index.html">
+                        <img src="img/Peters-Fruit-Logo.png" alt="Peters Fruit Logo" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    <a href="http://codepen.io/chriswall32/pen/BpJXWK">
+                        <img src="img/Button-White-Small.png" alt="CodePen Quote Machine" class="img-responsive center-block">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     <!-- Displayed Word Ends -->
     <footer class="container-fluid" id="contact">
         <div class="row">
-            <div class="col-md-2 col-md-offset-1 col-xs-4 inconsolata">
-                <img src="" alt="" class="img-responsive">
+            <div class="col-md-2 col-md-offset-1 col-xs-12 inconsolata">
+                <img src="img/profile-pic-sm.png" alt="Chris Wall" class="img-responsive">
             </div>
-            <div class="col-md-3 col-xs-4 inconsolata">
+            <div class="col-md-3 col-xs-12 inconsolata">
                 <h1>LET'S TALK.</h1>
                 <h2>I'M READY TO COLLABORATE WITH YOU.</h2>
                 <a href="mailto:chriswall32@gmail.com?subject=feedback">chriswall32@gmail.com</a>
             </div>
-            <div class="col-md-3 col-md-offset-2 col-xs-4 inconsolata">
+            <div class="col-md-3 col-md-offset-2 col-xs-12 inconsolata">
                 <h2>FOLLOW ME!</h2>
                 <p class="col-sm-8">
                     <i class="fa fa-facebook-square" aria-hidden="true"></i>
@@ -103,9 +101,12 @@
         </div>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
 </body>
 
 </html>
