@@ -143,8 +143,34 @@ work-tiles div:nth-child(1):hover {
   animation: rotate-full 2s infinite;
 }
 
+.rest-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
-.work-tiles div:nth-child(2) {
+.rest-overlay:hover {
+  opacity: 1;
+}
+
+.rest-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.work-tiles .pet-tile {
   /*max-width: 100%;
   max-height: 100%;*/
   background-image: url('../img/hero.jpg');
@@ -162,6 +188,33 @@ work-tiles div:nth-child(1):hover {
   /*animation: spin 2s infinite;*/
 }
 
+.pet-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pet-overlay:hover {
+  opacity: 1;
+}
+
+.pet-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .work-tiles div:nth-child(3) {
   background-image: url('../img/Road-Sign.png');
   background-size: cover;
@@ -169,13 +222,41 @@ work-tiles div:nth-child(1):hover {
 }
 
 .work-tiles div:nth-child(3) img {
-  width: 100%;
-  margin-top: 15%;
+  width: 85%;
+  margin-top: 23%;
+  margin-left: 5%;
 }
 
 .work-tiles div:nth-child(3):hover img {
   /*transform: scale(.95);*/
   animation: spin-around 2s infinite;
+}
+
+.peters-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.peters-overlay:hover {
+  opacity: 1;
+}
+
+.peters-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .work-tiles div:nth-child(4) {
@@ -191,6 +272,33 @@ work-tiles div:nth-child(1):hover {
 
 .work-tiles div:nth-child(4):hover img {
   animation: spin 2s infinite;
+}
+
+.code-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.code-overlay:hover {
+  opacity: 1;
+}
+
+.code-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .work-tiles div img {
