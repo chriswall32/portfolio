@@ -23,24 +23,11 @@
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: #595556;
+    /*background-color: #595556;*/
     color: #fff;
     font-family: 'Play', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 22px;
-}
-
-.navbar-toggle {
-    border: 2px #fff;
-    background-color: #595556;
-}
-
-.navbar-toggle:hover {
-    border: 1px solid #fff;
-}
-
-.navbar-toggle span {
-    background-color: #fff;
 }
 
 .nav-style a {
@@ -49,16 +36,20 @@
 
 .nav-style a:hover {
   background-color: #fff;
-  color: #595556;
+  color: #000;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus {
-    background-color: #595556;
+.nav>li>a {
+  display: inline-block;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: rgba(0,0,0,0.0);
 }
 
 .nav-pills>li.active>a:hover {
     background-color: #fff;
-    color: #595556;
+    color: #000;
 }
 
 
@@ -66,15 +57,15 @@
 
 .page-background {
     padding-top: 40px;
-    /*background-image: url('../img/background-img-pixel.png');*/
-    background-color: #2980b9;
-    min-height: 400px;
+    background-image: url('../img/night-sky.jpg');
+    /*background-color: #2980b9;*/
+    height: 100vh;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
 }
 
-.construct {
+.make-things {
     margin-top: 5%;
     font-size: 72px;
     text-shadow: 2px 2px 4px #000000;
@@ -95,16 +86,12 @@
     text-shadow: 2px 2px 4px #000000;
 }
 
-.shape-left {
-    width: 100%;
-    transform: translate(-2%, -30%);
-}
 
 /*===========Work Tiles========*/
 
 .work-background {
   background-color: #76F1E7;
-  padding-bottom: 50px
+  padding-bottom: 150px;
 }
 
 .work-background h1 {
