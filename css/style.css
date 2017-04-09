@@ -1,7 +1,7 @@
 /*=========Fonts==========*/
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Play:400,700');
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
 /*========Universals=======*/
 
 .inconsolata {
@@ -13,6 +13,10 @@
 
 .play-font {
     font-family: 'Play', sans-serif;
+}
+
+.poppins-font {
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -34,30 +38,30 @@
     color: #fff;
 }
 
-.nav-style a:hover {
+/*.nav-style a:hover {
   background-color: #fff;
   color: #000;
-}
+}*/
 
 .nav>li>a {
-  display: inline-block;
+  display: inline-flex;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover, .nav>li>a:focus, .nav>li>a:hover {
   background-color: rgba(0,0,0,0.0);
 }
 
-.nav-pills>li.active>a:hover {
+/*.nav-pills>li.active>a:hover {
     background-color: #fff;
     color: #000;
-}
+}*/
 
 
 /*========Main Section========*/
 
 .page-background {
     padding-top: 40px;
-    background-image: url('../img/night-sky.jpg');
+    background-image: url('../img/night-skies.jpg');
     /*background-color: #2980b9;*/
     height: 100vh;
     background-size: cover;
@@ -65,24 +69,23 @@
     width: 100vw;
 }
 
-.make-things {
+.top-hero {
     margin-top: 5%;
     font-size: 72px;
+    color: #fff;
     text-shadow: 2px 2px 4px #000000;
     z-index: 2;
 }
 
-.user-text {
+.mid-hero {
     font-size: 56px;
+    color: #fff;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.page-background img {
-    z-index: 0;
-}
-
-.wallet-text {
+.bottom-hero {
     font-size: 45px;
+    color: #fff;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -90,7 +93,7 @@
 /*===========Work Tiles========*/
 
 .work-background {
-  background-color: #76F1E7;
+  background-color: #6C7C8C;
   padding-bottom: 150px;
 }
 
@@ -383,93 +386,5 @@ footer .fa {
     }
     .wallet-text {
         font-size: 36px;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    /*Resize body text*/
-    .construct {
-        font-size: 59px;
-    }
-    .user-text {
-        font-size: 41px;
-    }
-    .wallet-text {
-        font-size: 32px;
-    }
-}
-
-@media screen and (max-width: 1145px) {
-    /*Resize body text*/
-    .construct {
-        font-size: 51px;
-    }
-    .user-text {
-        font-size: 32px;
-    }
-    .wallet-text {
-        font-size: 27px;
-    }
-}
-
-
-/*Mid-sized screen*/
-
-@media screen and (max-width: 995px) {
-    /*Resize body text*/
-    .construct {
-        font-size: 44px;
-    }
-    .user-text {
-        font-size: 28px;
-    }
-    .wallet-text {
-        font-size: 23px;
-    }
-}
-
-@media screen and (max-width: 875px) {
-    .construct {
-        font-size: 40px;
-    }
-    .user-text {
-        font-size: 26px;
-    }
-    .wallet-text {
-        font-size: 20px;
-    }
-    .shape-right {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 785px) {
-    .construct {
-        font-size: 34px;
-    }
-    .user-text {
-        font-size: 24px;
-    }
-    .wallet-text {
-        font-size: 18px;
-    }
-    .shape-right {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 680px) {
-    .construct {
-        font-size: 28px;
-    }
-    .user-text {
-        font-size: 18px;
-    }
-    .wallet-text {
-        font-size: 15px;
-    }
-    .shape-right {
-        width: 80%;
-        transform: translate(0, 0);
     }
 }
